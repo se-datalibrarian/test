@@ -17,7 +17,7 @@ Instructions for setting up a development environment to edit the SEDLS website 
 1. `git clone https://github.com/se-datalibrarian.git` to clone the SEDLS 2020 Gridsome project
 2. `cd 2020` to open the folder
 3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Start coding 🎉🙌
+4. Start coding. The only file that should need to be edited is `Index.vue`. The HTML in this file can be modified each year with updated information.
 
 ### 3. Learn more about the Gridsome and Tailwind CSS frameworks
 

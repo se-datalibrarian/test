@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <header class="fixed top-0 w-screen h-12 md:h-16 flex flex-row flex-wrap items-center px-0 md:px-4 mb-8 header bg-white bg-opacity-0">
+    <header class="fixed top-0 w-screen h-16 flex flex-row flex-wrap items-center justify-start md:justify-between px-2 md:px-4 mb-8 header bg-white shadow-md border-black">
       <a class="text-red-600 transition duration-200 ease-in-out hover:text-blue-600" href="https://se-datalibrarian.github.io/2020/">
         <LogoWide class="fill-current text-black hidden md:inline-block h-4 mr-2" />
       </a>
