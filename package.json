@@ -1,0 +1,25 @@
+{
+  "name": "se-datalibrarian.github.io",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Main website for the Southeast Data Librarian Symposium (SEDLS)",
+  "license": "MIT",
+  "scripts": {
+    "build": "gridsome build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@gridsome/plugin-google-analytics": "^0.1.1",
+    "gh-pages": "^3.0.0",
+    "gridsome": "^0.7.0"
+  },
+  "devDependencies": {
+    "gridsome-plugin-tailwindcss": "^2.2.48",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2",
+    "vue-svg-loader": "^0.16.0"
+  }
+}
