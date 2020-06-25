@@ -7,7 +7,7 @@
   "scripts": {
     "build": "gridsome build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -b master -d dist",
     "develop": "gridsome develop",
     "explore": "gridsome explore"
   },
