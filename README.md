@@ -1,12 +1,12 @@
-# Southeast Data Librarian Symposium 2020
+# Southeast Data Librarian Symposium
 
-Website for the 2020 Southeast Data Librarian Symposium (SEDLS). The SEDLS is intended to provide a low-cost opportunity for librarians and other research data specialists to gather and explore developments in the field of data librarianship, including the management and sharing of research data.
+Main website for the Southeast Data Librarian Symposium (SEDLS). The SEDLS is intended to provide a low-cost opportunity for librarians and other research data specialists to gather and explore developments in the field of data librarianship, including the management and sharing of research data.
 
 This is a static site built with [Gridsome](https://gridsome.org/) and [Tailwind CSS](https://tailwindcss.com/)
 
 ## Development setup
 
-Instructions for setting up a development environment to edit the SEDLS 2020 website on your own machine.
+Instructions for setting up a development environment to edit the SEDLS website on your own machine.
 
 ### 1. Install Gridsome CLI tool if you don't have
 
@@ -14,7 +14,7 @@ Instructions for setting up a development environment to edit the SEDLS 2020 web
 
 ### 2. Clone the SEDLS 2020 Gridsome project
 
-1. `git clone https://github.com/se-datalibrarian/2020.git` to clone the SEDLS 2020 Gridsome project
+1. `git clone https://github.com/se-datalibrarian.git` to clone the SEDLS 2020 Gridsome project
 2. `cd 2020` to open the folder
 3. `gridsome develop` to start a local dev server at `http://localhost:8080`
 4. Start coding 🎉🙌
