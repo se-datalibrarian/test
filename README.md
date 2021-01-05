@@ -12,10 +12,10 @@ Instructions for setting up a development environment to edit the SEDLS website 
 
 `npm install --global @gridsome/cli`
 
-### 2. Clone the SEDLS 2020 Gridsome project
+### 2. Clone the SEDLS Gridsome project
 
-1. `git clone https://github.com/se-datalibrarian.git` to clone the SEDLS 2020 Gridsome project
-2. `cd 2020` to open the folder
+1. `git clone https://github.com/se-datalibrarian/se-datalibrarian.github.io.git` to clone the SEDLS Gridsome project
+2. `cd se-datalibrarian.github.io` to open the folder
 3. `gridsome develop` to start a local dev server at `http://localhost:8080`
 4. Start coding. The only file that should need to be edited is `Index.vue`. The HTML in this file can be modified each year with updated information.
 
@@ -26,7 +26,7 @@ Instructions for setting up a development environment to edit the SEDLS website 
 
 ## Build local version
 
-Instructions for building a local version of the SEDLS 2020 website on your own machine. This is useful for testing prior to deployment.
+Instructions for building a local version of the SEDLS website on your own machine. This is useful for testing prior to deployment.
 
 ### 1. Run the build script
 
@@ -51,7 +51,7 @@ Edit the `gridsome.config.js` file to match your site URL and path:
 
   siteUrl: 'https://<your-github-username>.github.io',
   pathPrefix: '/<your-gridsome-repo-name>',
-  
+
   ```
 
 ### 2. Run the deployment script
