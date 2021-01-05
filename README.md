@@ -47,10 +47,12 @@ Instructions for deploying the website to GitHub pages. This project uses the `g
 
 Edit the `gridsome.config.js` file to match your site URL and path:
 
-    ```bash
-      siteUrl: 'https://<your-github-username>.github.io',
-      pathPrefix: '/<your-gridsome-repo-name>',
-    ```
+  ```js
+
+  siteUrl: 'https://<your-github-username>.github.io',
+  pathPrefix: '/<your-gridsome-repo-name>',
+  
+  ```
 
 ### 2. Run the deployment script
 

@@ -16,7 +16,6 @@ module.exports = {
   siteDescription: `Main website for the Southeast Data Librarian Symposium (SEDLS). The SEDLS is intended to provide a low-cost opportunity for librarians and other research data specialists to gather and explore developments in the field of data librarianship, including the management and sharing of research data.`,
   siteUrl: `https://se-datalibrarian.github.io`,
   author: `@SEDataLibrarian`,
-  siteUrl: 'https://se-datalibrarian.github.io',
   plugins: [
     {
       use: '@gridsome/plugin-google-analytics',
