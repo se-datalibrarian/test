@@ -2,37 +2,35 @@
   <Layout>
     <Logo class="mx-8 sm:mx-32 mb-4"></Logo>
 
-    <h1 class="ml-8 sm:mx-32 text-3xl text-black text-center">Southeast Data Librarian Symposium</h1>
-
-    <h2 class="text-2xl mt-4">About</h2>
-    <p class="mt-4">
-      The Southeast Data Librarian Symposium is intended to provide a low-cost opportunity for librarians and other research data specialists to gather and explore developments in the field of data librarianship, including the management and sharing of research data. Check out the past symposium websites below for an idea of programming content.
+    <h1 class="w-full text-center text-2xl">Southeast Data Librarian Symposium 2021</h1>
+    <h2 class="w-full mt-2 text-center text-xl">Online, the week of October, 11 2021</h2>
+    <p>
+      The Southeast Data Librarian Symposium (SEDLS) is returning online in 2021! The program will consist of workshops, short presentations, and networking opportunities during the week of October 11, 2021.
     </p>
-		<p class="mt-4">
-      In addition to learning about new work in the field, attendees will have the opportunity to network and build partnerships with regional colleagues. It is open to all who wish to attend, including students, data managers and scientists, and those situated outside the Southeast. The meeting is styled after the successful <a class="text-red-600 transition duration-200 ease-in-out hover:text-blue-600" href="https://mwdatalibrariansymposium.wordpress.com/">Midwest Data Librarian Symposium</a>.
+    <p>
+      Check out <a class="link" href="https://se-datalibrarian.github.io/2020/program/">last year's program</a> to view abstracts, posters, and presentation recordings for an idea of content.
     </p>
-
-    <h2 class="text-2xl mt-4">Past Symposiums</h2>
-    <ul class="mt-4 ml-4 list-disc list-inside">
-      <li><a class="text-red-600 transition duration-200 ease-in-out hover:text-blue-600" href="https://se-datalibrarian.github.io/2018/">SEDLS 2018: The Georgia Tech Library in Atlanta, GA</a></li>
-      <li><a class="text-red-600 transition duration-200 ease-in-out hover:text-blue-600" href="https://se-datalibrarian.github.io/2019/">SEDLS 2019: Tulane University in New Orleans, LA</a></li>
-      <li><a class="text-red-600 transition duration-200 ease-in-out hover:text-blue-600" href="https://se-datalibrarian.github.io/2020/">SEDLS 2020: Online</a></li>
-    </ul>
+    <p>
+      SEDLS is open to all who wish to attend, including students, data managers, and data scientists. Learn more about SEDLS on the <g-link class="link" to="/about">About Us page</g-link>.
+    </p>
+    <p>
+      This website will be updated with the latest information as planning continues. You can reach out to <a title="Contact us via email" href="mailto:se.datalibrarian@gmail.com">se.datalibrarian@gmail.com</a> with any questions.
+    </p>
   </Layout>
 </template>
 
 <script>
-  import Logo from '~/assets/logo-main.svg'
-  import CardAnnouncement from '~/components/CardAnnouncement.vue'
-  export default {
-    components: {
-      Logo,
-      CardAnnouncement
-    },
-    metaInfo: {
-      title: 'Home'
-    }
+import Logo from '~/assets/logo-main.svg'
+
+export default {
+  components: {
+    Logo
+  },
+
+  metaInfo: {
+    title: 'Home'
   }
+}
 </script>
 
 <style>

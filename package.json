@@ -1,25 +1,31 @@
 {
-  "name": "se-datalibrarian.github.io",
-  "version": "0.1.0",
+  "name": "sedls-2021",
   "private": true,
-  "description": "Main website for the Southeast Data Librarian Symposium (SEDLS)",
+  "description": "Website for the 2021 Southeast Data Librarian Symposium (SEDLS)",
+  "version": "0.1.0",
   "license": "MIT",
   "scripts": {
     "build": "gridsome build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@gridsome/plugin-google-analytics": "^0.1.2",
+    "@fontsource/open-sans": "^4.3.0",
+    "@fontsource/roboto-mono": "^4.3.0",
+    "csv-parse": "^4.14.2",
+    "d3-array": "^2.9.1",
     "gh-pages": "^3.1.0",
-    "gridsome": "^0.7.23"
+    "gridsome": "^0.7.23",
+    "gridsome-plugin-gtag": "^0.1.10",
+    "vue-clickaway": "^2.2.2"
   },
   "devDependencies": {
-    "gridsome-plugin-tailwindcss": "^2.2.48",
+    "gridsome-plugin-tailwindcss": "^4.1.1",
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.2",
     "vue-svg-loader": "^0.16.0"
   }
 }
