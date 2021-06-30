@@ -17,7 +17,7 @@ module.exports = {
       current: 'currentColor',
       gray: colors.blueGray,
       red: colors.rose,
-      blue: colors.lightBlue,
+      blue: colors.sky,
       green: colors.teal,
     },
     fontFamily: {
