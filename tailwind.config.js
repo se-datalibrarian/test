@@ -35,16 +35,19 @@ module.exports = {
     plugin(function({ addComponents }) {
       const links = {
         '.link': {
-          color: '#0369A1',
+          color: '#BE123C',
+          background: 'linear-gradient(to top, #E11D48, #E11D48 50%, transparent 50%)',
+          backgroundSize: '100% 200%',
           textDecoration: 'underline',
           textDecorationThickness: '2px',
           textUnderlineOffset: '3px',
-          transitionProperty: 'color background-color',
+          transitionProperty: 'color background-position',
           transitionDuration: '200ms',
           transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
           '&:hover': {
-            color: '#1E293B',
-            backgroundColor: '#2DD4BF'
+            color: '#E5E7EB',
+            backgroundPosition: '0 bottom',
+            textDecorationColor: '#E11D48'
           },
         },
       }

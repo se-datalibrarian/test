@@ -1,5 +1,5 @@
 <template>
-  <div class="layout">
+  <div class="layout bg-gray-200">
     <HeaderLayout />
     <div class="container mx-auto max-w-screen-md mt-24 px-3 sm:px-4 text-gray-800 bg-gray-200">
       <transition name="fade" appear>
@@ -42,6 +42,6 @@ body {
 
 .active--exact.active {
   color: #2DD4BF;
-  background-color: #1E293B;
+  background: #1E293B;
 }
 </style>

@@ -5,17 +5,17 @@
         <LogoTriangle class="fill-current text-gray-800 h-14" aria-label="Home" />
       </g-link>
       <nav class="hidden sm:flex flex-col sm:ml-2">
-        <g-link class="w-max px-2 mb-1 text-lg inline-block transition duration-200 ease-in-out hover:bg-green-400 hover:text-gray-800" to="/" active-class="null">
+        <g-link class="w-max px-2 mb-1 text-lg inline-block" to="/" active-class="null">
           {{ $static.metadata.siteName }}
         </g-link>
-        <div class="flex justify-between items-center">
+        <div class="flex justify-left items-center">
           <g-link
-            v-for="(page, index) in sortedPageLinks" :key="page.path"
-            class="px-2 text-gray-900 transition duration-200 ease-in-out hover:bg-green-400 hover:text-gray-800"
+            v-for="(path, index) in sortedPageLinks" :key="path"
+            class="px-2 text-gray-800 link-animate"
             :class="index != 0 ? 'border-l-2 border-green-400': ''"
-            :to="page.path"
+            :to="path"
           >
-            {{ formatPageLinks(page.path) }}
+            {{ formatPageLinks(path) }}
           </g-link>
         </div>
       </nav>
@@ -36,16 +36,16 @@
         <nav
           v-if="show"
           v-on-clickaway="away"
-          class="mobile-nav absolute sm:hidden flex flex-col justify-between bg-gray-200 p-2 border-2 border-t-0 border-gray-800"
+          class="mobile-nav absolute sm:hidden w-1/2 flex flex-col justify-between bg-gray-200 p-2 border-2 border-t-0 border-gray-800"
         >
           <g-link
-            v-for="(page, index) in sortedPageLinks" :key="page.path"
+            v-for="(path, index) in sortedPageLinks" :key="path"
             v-on:click="show = false"
             class="p-2 text-lg text-gray-900 transition duration-200 ease-in-out hover:bg-green-400 hover:text-gray-800"
             :class="index != 0 ? 'border-t-2 border-green-400': ''"
-            :to="page.path"
+            :to="path"
           >
-            {{ formatPageLinks(page.path) }}
+            {{ formatPageLinks(path) }}
           </g-link>
         </nav>
       </transition>
@@ -83,19 +83,32 @@ export default {
 
   computed: {
     sortedPageLinks() {
-      const sortOrder = [
-        'About', 'Code of Conduct', 'Program', 'Accessibility', 'Registration'
+      // Set the order of page links in the header
+      const pageLinkOrder = [
+        'About',
+        'Registration',
+        'Code of Conduct',
+        'Program',
+        'Accessibility'
       ]
+      // Get query data
       const unsortedPageLinks = this.$static.allPage
-      return this.$static.allPage.map(function(page) {
-        const sortIndex = sortOrder.findIndex(sortPage =>
-          sortPage.toLowerCase() ===
-          page.path
-            .split('/')[1]
-            .split('-')
-            .join(' ')
+      // Format data from query to match against link order
+      const formattedUnsortedPageLinks = unsortedPageLinks.map(page =>
+        page.path.split('/')[1].split('-').join(' ')
+      )
+      // Filter the pageLinkOrder list to only include pages returned by the query
+      const filteredPageLinkOrder = pageLinkOrder.filter(sortPage =>
+        formattedUnsortedPageLinks.includes(sortPage.toLowerCase())
+      )
+
+      // Return an array that is ordered based on pageLinkOrder and contains the link path
+      return formattedUnsortedPageLinks.map(page => {
+        const sortIndex=filteredPageLinkOrder.findIndex(
+          sortPage => sortPage.toLowerCase() ===
+          page
         )
-        return unsortedPageLinks[sortIndex]
+        return unsortedPageLinks[sortIndex].path
       })
     }
   },
@@ -142,5 +155,18 @@ export default {
 .fade-enter, .fade-leave-to {
   opacity: 0;
   transform: scale(0);
+}
+
+.link-animate {
+  background: linear-gradient(to right, rgb(45, 212, 191), rgb(45, 212, 191) 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition-property: background-position;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-position: left 0;
+  }
 }
 </style>
