@@ -156,17 +156,4 @@ export default {
   opacity: 0;
   transform: scale(0);
 }
-
-.link-animate {
-  background: linear-gradient(to right, rgb(45, 212, 191), rgb(45, 212, 191) 50%, transparent 50%);
-  background-size: 200% 100%;
-  background-position: 100%;
-  transition-property: background-position;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover {
-    background-position: left 0;
-  }
-}
 </style>
