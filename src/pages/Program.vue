@@ -6,7 +6,7 @@
       Submit a Proposal
     </ButtonLinkDefault>
     <p class="mt-4">
-      The Southeast Data Librarian Symposium is soliciting for virtual workshops, short talks, and poster presentations for the 2021 program.
+      The Southeast Data Librarian Symposium is soliciting for virtual workshops, short talks, and poster presentations for the 2021 program. <strong>The deadline for proposals is Friday, August 13, 2020.</strong>
     </p>
     <p class="mt-4">
       Topics of particular interest this year include, but are not limited to:

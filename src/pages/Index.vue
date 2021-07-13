@@ -5,7 +5,7 @@
     <h1 class="w-full text-center text-2xl">Southeast Data Librarian Symposium 2021</h1>
     <h2 class="w-full mt-2 text-center text-xl">Online, October 13-15</h2>
     <CardAnnouncement>
-      <h2 class="text-lg">The call for proposals is open!</h2>
+      <h2 class="text-lg">The call for proposals is open now through August 13!</h2>
       <p class="mt-4">
         Visit the <g-link class="link" to="/program">Program Page</g-link> for more information or use the button below to access the proposal submission form.
       </p>
