@@ -2,7 +2,7 @@
   <Layout>
     <h1 class="text-3xl">Program</h1>
     <p class="mt-4">Submit a proposal, and help create the 2021 program!</p>
-    <ButtonLinkDefault :url="'#'" class="block mx-auto mt-4 w-max">
+    <ButtonLinkDefault :url="'https://forms.gle/cHx569XJUwAhTokZA'" class="block mx-auto mt-4 w-max">
       Submit a Proposal
     </ButtonLinkDefault>
     <p class="mt-4">

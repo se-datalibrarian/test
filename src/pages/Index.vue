@@ -9,7 +9,7 @@
       <p class="mt-4">
         Visit the <g-link class="link" to="/program">Program Page</g-link> for more information or use the button below to access the proposal submission form.
       </p>
-      <ButtonLinkDefault :url="'#'" class="mx-auto mt-4 mb-2">
+      <ButtonLinkDefault :url="'https://forms.gle/cHx569XJUwAhTokZA'" class="mx-auto mt-4 mb-2">
         Submit a Proposal
       </ButtonLinkDefault>
     </CardAnnouncement>
