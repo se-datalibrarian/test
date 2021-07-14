@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <h1 class="text-3xl">Program</h1>
-    <p class="mt-4">Submit a proposal, and help create the 2021 program!</p>
+    <p class="mt-4 italic">Submit a proposal, and help create the 2021 program!</p>
     <ButtonLinkDefault :url="'https://forms.gle/cHx569XJUwAhTokZA'" class="block mx-auto mt-4 w-max">
       Submit a Proposal
     </ButtonLinkDefault>
