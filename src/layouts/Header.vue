@@ -86,9 +86,9 @@ export default {
       // Set the order of page links in the header
       const pageLinkOrder = [
         'About',
+        'Program',
         'Registration',
         'Code of Conduct',
-        'Program',
         'Accessibility'
       ]
       // Get query data
@@ -102,11 +102,12 @@ export default {
         formattedUnsortedPageLinks.includes(sortPage.toLowerCase())
       )
 
-      // Return an array that is ordered based on pageLinkOrder and contains the link path
-      return formattedUnsortedPageLinks.map(page => {
-        const sortIndex=filteredPageLinkOrder.findIndex(
-          sortPage => sortPage.toLowerCase() ===
-          page
+      // Return an array that is ordered based on filteredPageLinkOrder and contains the link path
+      return filteredPageLinkOrder.map(page => {
+        const sortIndex = formattedUnsortedPageLinks.findIndex(
+          unsortedPage => {
+            return unsortedPage === page.toLowerCase()
+          }
         )
         return unsortedPageLinks[sortIndex].path
       })

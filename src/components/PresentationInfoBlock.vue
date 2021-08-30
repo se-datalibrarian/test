@@ -1,5 +1,7 @@
 <template>
-<div>
+<div v-if="presentationInfo.title === ''">
+</div>
+<div v-else>
   <h4 
     v-if="presentationInfo.type !== 'Break'"
     class="text-md mt-6 font-light text-gray-700"
@@ -24,12 +26,12 @@
   >
     Presenter was unable to allow recording or sharing of presentation materials
   </p>
-  <p
+  <!-- <p
     v-if="['Posters', 'Workshops'].includes(presentationInfo.type)"
     class="text-md mt-1 font-light italic text-gray-700"
   >
     This presentation was not recorded
-  </p>
+  </p> -->
   <a
     v-if="presentationInfo.YouTubeLink !== ''"
     class="link mt-2 block"
@@ -64,6 +66,14 @@ export default {
       'Jacky Hart (Library of Congress / Congressional Research Service)'
     ]
   }),
+
+  methods: {
+    noPresentations: function(session) {
+      return !session.presentations.map(presentation =>
+        presentation.title
+      ).every(title => title == "")
+    }
+  },
 
   computed: {
     abstractToggleLanguage() {

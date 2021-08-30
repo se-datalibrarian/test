@@ -1,6 +1,12 @@
 <template>
   <Layout>
     <h1 class="text-3xl">Registration</h1>
+    <!-- <p class="mt-4 italic">Registration is open for SEDLS 2021!</p>
+    <div class="flex justify-center items-center mt-4 mb-2">
+      <ButtonLinkDefault :url="'#'">
+        Register for SEDLS 2021
+      </ButtonLinkDefault>
+    </div> -->
     <p class="mt-4 italic">
       Registration for the 2021 Southeast Data Librarian Symposium will open soon. Current registration information is below.
     </p>
