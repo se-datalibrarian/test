@@ -1,7 +1,8 @@
 <template>
 <div v-if="presentationInfo.title === ''">
 </div>
-<div v-else>
+<div v-else class="relative z-0">
+  <resize-observer @notify="handleResize" />
   <h4 
     v-if="presentationInfo.type !== 'Break'"
     class="text-md mt-6 font-light text-gray-700"
@@ -49,7 +50,7 @@
     v-html="abstractToggleLanguage"
   ></button>
   <p
-    v-bind:style="{'--abstract-height': abstractHeight}"
+    v-bind:style="{'--abstract-height': abstractHeight + 'px'}"
     class="abstract mt-1 text-md whitespace-pre-wrap overflow-hidden max-h-0"
     v-bind:class="{'slide-in': showAbstract}"
   >{{ presentationInfo.abstract }}</p>
@@ -57,6 +58,8 @@
 </template>
 
 <script>
+import 'vue-resize/dist/vue-resize.css'
+
 export default {
   name: "PresentationInfoBlock",
 
@@ -66,11 +69,21 @@ export default {
 
   data: () => ({
     showAbstract: false,
-    abstractHeight: "",
+    abstractHeight: 0,
+    abstractWidth: 0,
     noShare: [
       'Jacky Hart (Library of Congress / Congressional Research Service)'
     ]
   }),
+
+  methods: {
+    handleResize (dimensions) {
+      // Resize the height of the abstract element when element width changes
+      if (dimensions.width !== this.abstractWidth) {
+        this.abstractHeight = dimensions.height
+      }
+    }
+  },
 
   computed: {
     abstractToggleLanguage() {
@@ -85,16 +98,12 @@ export default {
           <span class='text-red-700'>Abstract</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather stroke-current text-red-700"><polyline points="6 9 12 15 18 9"></polyline></svg>`
       }
-    },
-    setAbstractHeight() {
-      return this.showAbstract ? this.abstractHeight : 0
     }
   },
 
   mounted() {
-    const abstractElement = this.$el.getElementsByClassName('abstract')[0]
-    this.abstractHeight = abstractElement.scrollHeight + "px"
-    console.log(abstractElement.scrollHeight)
+    this.abstractHeight = this.$el.getElementsByClassName('abstract')[0].scrollHeight
+    this.abstractWidth = this.$el.getElementsByClassName('abstract')[0].scrollWidth
   }
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed top-0 w-screen sm:h-16 px-3 sm:px-4 bg-gray-200 flex flex-wrap items-center justify-center">
+  <header class="fixed z-10 top-0 w-screen sm:h-16 px-3 sm:px-4 bg-gray-200 flex flex-wrap items-center justify-center">
     <div class="w-full max-w-screen-md py-2 sm:pt-4 sm:pb-2 bg-gray-200 border-b-2 border-gray-800 flex items-center justify-between sm:justify-start font-mono">
       <g-link class="" to="/" active-class="null">
         <LogoTriangle class="fill-current text-gray-800 h-14" aria-label="Home" />
