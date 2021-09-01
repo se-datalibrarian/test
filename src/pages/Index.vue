@@ -4,15 +4,15 @@
 
     <h1 class="w-full text-center text-2xl">Southeast Data Librarian Symposium 2021</h1>
     <h2 class="w-full mt-2 text-center text-xl">Online, October 13-15</h2>
-    <!-- <CardAnnouncement>
+    <CardAnnouncement>
       <h2 class="text-lg">Registration is open for SEDLS 2021!</h2>
       <p class="mt-4">
         Visit the <g-link class="link" to="/registration">Registration Page</g-link> for more information or use the button below to register.
       </p>
-      <ButtonLinkDefault :url="'#'" class="mx-auto mt-4 mb-2">
+      <ButtonLinkDefault :url="'https://rdapassociation.org/event-4449603'" class="mx-auto mt-4 mb-2">
         Register for SEDLS 2021
       </ButtonLinkDefault>
-    </CardAnnouncement> -->
+    </CardAnnouncement>
     <p class="mt-4">
       The Southeast Data Librarian Symposium (SEDLS) is returning online in 2021! The program will consist of workshops, short presentations, and networking opportunities October 13-15, 2021.
     </p>
