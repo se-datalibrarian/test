@@ -44,7 +44,7 @@
           v-else-if="session.sessionType != 'Break'"
           class="px-3 md:w-4/5 flex items-center"
         >
-          <h4>To be determined</h4>
+          <h3 class="py-4 text-xl text-gray-800">Coming soon!</h3>
         </div>
       </div>
     </div>

@@ -48,7 +48,11 @@
     class="abstract-toggle mt-2 flex flex-row"
     v-html="abstractToggleLanguage"
   ></button>
-  <p v-show="presentationInfo.abstract && showAbstract" class="mt-1 text-md whitespace-pre-wrap overflow-hidden">{{ presentationInfo.abstract }}</p>
+  <p
+    v-bind:style="{'--abstract-height': abstractHeight}"
+    class="abstract mt-1 text-md whitespace-pre-wrap overflow-hidden max-h-0"
+    v-bind:class="{'slide-in': showAbstract}"
+  >{{ presentationInfo.abstract }}</p>
 </div>
 </template>
 
@@ -62,18 +66,11 @@ export default {
 
   data: () => ({
     showAbstract: false,
+    abstractHeight: "",
     noShare: [
       'Jacky Hart (Library of Congress / Congressional Research Service)'
     ]
   }),
-
-  methods: {
-    noPresentations: function(session) {
-      return !session.presentations.map(presentation =>
-        presentation.title
-      ).every(title => title == "")
-    }
-  },
 
   computed: {
     abstractToggleLanguage() {
@@ -88,7 +85,26 @@ export default {
           <span class='text-red-700'>Abstract</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather stroke-current text-red-700"><polyline points="6 9 12 15 18 9"></polyline></svg>`
       }
+    },
+    setAbstractHeight() {
+      return this.showAbstract ? this.abstractHeight : 0
     }
+  },
+
+  mounted() {
+    const abstractElement = this.$el.getElementsByClassName('abstract')[0]
+    this.abstractHeight = abstractElement.scrollHeight + "px"
+    console.log(abstractElement.scrollHeight)
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.abstract {
+  transition: max-height 0.25s ease-out;
+}
+
+.slide-in {
+  max-height: calc(var(--abstract-height) + 2rem);
+}
+</style>
