@@ -6,6 +6,7 @@
     </p>
     <h2 class="text-2xl mt-4">Zoom</h2>
     <ul class="mt-4 ml-8 list-disc list-outside">
+      <li>Live transcription will be enabled for all Zoom meetings. Participants will have the ability to enable/disable captioning on their device in Zoom.</li>
       <li>Zoom is compatible with the following screen readers: VoiceOver on iOS and OSX, Talkback on Android devices, and JAWS and NVDA for Windows platforms.</li>
       <li>All short talks will be recorded, captioned/transcribed, and shared along with any additional notes and presentation materials once the symposium is over.</li>
       <li>We acknowledge that Discord has limited options for accessibility and will provide access to symposium proceedings and social events and share information and materials via multiple avenues, including Zoom, Discord, and email.</li>
