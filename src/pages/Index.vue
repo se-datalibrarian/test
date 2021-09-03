@@ -1,7 +1,6 @@
 <template>
   <Layout>
     <Logo class="mx-8 sm:mx-32 mb-4"></Logo>
-
     <h1 class="w-full text-center text-2xl">Southeast Data Librarian Symposium 2021</h1>
     <h2 class="w-full mt-2 text-center text-xl">Online, October 13-15</h2>
     <CardAnnouncement>
