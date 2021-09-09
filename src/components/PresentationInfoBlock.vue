@@ -81,6 +81,9 @@ export default {
       // Resize the height of the abstract element when element width changes
       if (dimensions.width !== this.abstractWidth) {
         this.abstractHeight = dimensions.height
+      } else if (this.abstractHeight !== dimensions.height 
+        && window.innerWidth >= 768) {
+          this.abstractHeight = dimensions.height
       }
     }
   },
