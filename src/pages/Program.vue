@@ -8,7 +8,7 @@
       Attendees are expected to follow the symposium <g-link class="link" to="/code-of-conduct" active-class="null">Code of Conduct</g-link> and to be aware of the planning committee's <g-link class="link" to="/accessibility" active-class="null">Commitment to Accessibility</g-link>.
     </p>
     <p class="mt-4 font-bold">All listed times are in Eastern Time (EDT).</p>
-    <div class="mt-4 mb-8 md:-mx-4" v-for="day in program" :key="day.day">
+    <div class="mt-4 mb-8" v-for="day in program" :key="day.day">
       <h2 class="mt-4 pl-3 p-2 bg-gray-800 text-2xl text-green-400">{{ day.day }}</h2>
       <div 
         class="mt-0 py-2 alternate-background border-b-2 border-solid border-gray-800 md:flex md:flex-row"

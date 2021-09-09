@@ -5,7 +5,7 @@
   <resize-observer @notify="handleResize" />
   <h4 
     v-if="presentationInfo.type !== 'Break'"
-    class="text-md mt-6 font-light text-gray-700"
+    class="text-md mt-6 font-light text-gray-800"
   >
     {{ presentationInfo.startTime }}
   </h4>
@@ -22,7 +22,7 @@
     {{ presentationInfo.presenters }}
   </p>
   <p
-    v-if="this.noShare.includes(presentationInfo.presenters)"
+    v-if="this.noShare.includes(presentationInfo.title)"
     class="text-md mt-1 font-light italic text-gray-700"
   >
     Presenter was unable to allow recording or sharing of presentation materials
@@ -71,9 +71,9 @@ export default {
     showAbstract: false,
     abstractHeight: 0,
     abstractWidth: 0,
-    noShare: [
-      'Jacky Hart (Library of Congress / Congressional Research Service)'
-    ]
+    // Use this data list to indicate presentations that cannot be shared due to
+    // privacy concerns. List item should be full presentation title.
+    noShare: []
   }),
 
   methods: {
