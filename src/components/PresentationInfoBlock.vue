@@ -16,11 +16,11 @@
     {{ presentationInfo.title }}
   </h4>
   <p
-    v-for="presenters in presentationInfo.presenters.split(', ')"
-    :key=presenters
-    class="text-md mt-1 font-light text-gray-700"
+    v-for="presenter in presentationInfo.presenters"
+    :key=presenter.name
+    class="text-md mt-1  text-gray-700"
   >
-    {{ presenters }}
+    {{ presenter.name }} {{ presenter.institution }}
   </p>
   <p
     v-if="this.noShare.includes(presentationInfo.title)"

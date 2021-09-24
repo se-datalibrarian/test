@@ -130,7 +130,14 @@ export default {
                 return {
                   id: i,
                   title: d.title,
-                  presenters: d.presenters,
+                  presenters: d.presenters.split(', ').map(pres => {
+                    console.log(pres.split(' ('))
+                    const [presenter, institution] = pres.split(' (')
+                    return {
+                      'name': presenter,
+                      'institution': institution === undefined ? '' : '(' + institution
+                    }
+                  }),
                   abstract: d.abstract,
                   startTime: d.startTimeEDT,
                   presentationLength: +d.lengthMin,

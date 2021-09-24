@@ -18,10 +18,7 @@
       </template>
     </CardAnnouncement>
     <p class="mt-4">
-      The Southeast Data Librarian Symposium (SEDLS) is returning online in 2021! The program will consist of workshops, short presentations, and networking opportunities October 13-15, 2021.
-    </p>
-    <p class="mt-4">
-      The SEDLS planning committee is currently putting together <g-link class="link" to="/program">the 2021 program</g-link>. Check out <a class="link" href="https://se-datalibrarian.github.io/2020/program/">last year's program</a> to view abstracts, posters, and presentation recordings for an idea of content.
+      The Southeast Data Librarian Symposium (SEDLS) is returning online in 2021! The <g-link class="link" to="/program">program</g-link> will consist of workshops, short presentations, and networking opportunities October 13-15, 2021.
     </p>
     <p class="mt-4">
       SEDLS is open to all who wish to attend, including students, data managers, and data scientists. Learn more about SEDLS on the <g-link class="link" to="/about">About Us page</g-link>.
