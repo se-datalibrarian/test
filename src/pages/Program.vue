@@ -7,6 +7,9 @@
     <p class="mt-4">
       Attendees are expected to follow the symposium <g-link class="link" to="/code-of-conduct" active-class="null">Code of Conduct</g-link> and to be aware of the planning committee's <g-link class="link" to="/accessibility" active-class="null">Commitment to Accessibility</g-link>.
     </p>
+    <p>
+      Short Talks will be recorded, captioned, and shared along with any additional notes and presentation materials at a later date. Workshops and poster presentations will not be recorded, though poster files will be shared at a later date. Workshop leaders, at their discretion, may provide workshop materials to share at a later date.
+    </p>
     <p class="mt-4 font-bold">All listed times are in Eastern Time (EDT).</p>
     <div class="mt-4 mb-8" v-for="day in program" :key="day.day">
       <h2 class="mt-4 pl-3 p-2 bg-gray-800 text-2xl text-green-400">{{ day.day }}</h2>
