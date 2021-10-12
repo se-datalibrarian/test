@@ -4,7 +4,9 @@
     <p class="mt-4">
       The Southeast Data Librarian Symposium organizers are committed to providing an environment that allows attendees to participate during the day without fear of harassment or discriminatory behavior. Due to the nature of this symposium being completely virtual we expect attendees to follow this code of conduct. We use a Google Form that is actively monitored by symposium organizers for reporting any violations of the Code of Conduct. Use the button below to access the form and report a violation.
     </p>
-    <a class="block my-8 text-center" href="https://forms.gle/vU65Dkvi5kHyfdYe7"><ButtonLinkDefault>Report a violation</ButtonLinkDefault></a>
+    <div class="block my-8 text-center"
+      ><ButtonLinkDefault url="https://forms.gle/vU65Dkvi5kHyfdYe7">Report a violation</ButtonLinkDefault>
+    </div>
     <h2 class="mt-4 text-2xl">Unacceptable Behavior</h2>
     <p class="mt-4">
       <span class="font-bold">Abusive Behavior:</span> Harassment is understood as any behavior that threatens or demeans another person or group, or produces an unsafe environment. It includes offensive verbal comments or non-verbal expressions related to gender, gender identity, gender expression, sexual orientation, disability, physical appearance, body size, race, age, religious or political beliefs; sexual or discriminatory images in online spaces; deliberate intimidation, stalking, following, harassing photography, screenshots or recording; sustained disruption of talks or other events, and unwelcome sexual attention.
