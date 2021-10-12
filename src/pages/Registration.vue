@@ -1,12 +1,9 @@
 <template>
   <Layout>
     <h1 class="text-3xl">Registration</h1>
-    <p class="mt-4 italic">Registration is open for SEDLS 2021!</p>
-    <div class="flex justify-center items-center mt-4 mb-2">
-      <ButtonLinkDefault :url="'https://rdapassociation.org/event-4449603'">
-        Register for SEDLS 2021
-      </ButtonLinkDefault>
-    </div>
+    <p class="mt-4 italic">
+      Registration for SEDLS 2021 has closed. We look forward to seeing you!
+    </p>
     <h2 class="mt-4 text-2xl">Registration cost</h2>
     <p class="mt-4">
       There are seperate costs for attending the general conference, which includes the short talk sessions and poster session, and attending workshops.
