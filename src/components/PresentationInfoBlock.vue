@@ -34,16 +34,20 @@
   >
     This presentation was not recorded
   </p> -->
-  <a
-    v-if="presentationInfo.YouTubeLink !== ''"
-    class="link mt-2 block"
-    v-bind:href="presentationInfo.YouTubeLink"
-  >View recording on YouTube</a>
-  <a
-    v-if="!['Break'].includes(presentationInfo.type) && presentationInfo.materialsLink !== ''"
-    class="link mt-2 block"
-    v-bind:href="presentationInfo.materialsLink"
-  >View presentation materials</a>
+  <div class="mt-2 block">
+    <a
+      v-if="presentationInfo.YouTubeLink !== ''"
+      class="link mt-2 block"
+      v-bind:href="presentationInfo.YouTubeLink"
+    >View recording on YouTube</a>
+  </div>
+  <div class="mt-2 block">
+    <a
+      v-if="!['Break'].includes(presentationInfo.type) && presentationInfo.materialsLink !== ''"
+      class="link"
+      v-bind:href="presentationInfo.materialsLink"
+    >Access presentation materials</a>
+  </div>
   <button
     v-on:click="showAbstract = !showAbstract"
     v-if="presentationInfo.abstract"
