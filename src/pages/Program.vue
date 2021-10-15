@@ -4,11 +4,14 @@
     <p class="mt-4">
       Sessions will be held online through Zoom and Discord. Information and instructions to join sessions will be sent to registered attendees via email in the week before the symposium, along with links to join workshops for workshop registrants.
     </p>
-    <p class="mt-4">
-      Attendees are expected to follow the symposium <g-link class="link" to="/code-of-conduct" active-class="null">Code of Conduct</g-link> and to be aware of the planning committee's <g-link class="link" to="/accessibility" active-class="null">Commitment to Accessibility</g-link>.
+    <p>
+      Links to presentation materials for short talks, poster presentations, and workshops can be found in the program listing below. You can also access and find a full listing of materials in the <a class="link" href="https://osf.io/pyscb/">SEDLS 2021 OSF repository</a>.
     </p>
     <p>
-      Short Talks will be recorded, captioned, and shared along with any additional notes and presentation materials at a later date. Workshops and poster presentations will not be recorded, though poster files will be shared at a later date. Workshop leaders, at their discretion, may provide workshop materials to share at a later date.
+      Short Talks will be recorded, captioned, and shared following the symposium. Workshops and poster presentations will not be recorded.
+    </p>
+    <p class="mt-4">
+      Attendees are expected to follow the symposium <g-link class="link" to="/code-of-conduct" active-class="null">Code of Conduct</g-link> and to be aware of the planning committee's <g-link class="link" to="/accessibility" active-class="null">Commitment to Accessibility</g-link>.
     </p>
     <p class="mt-4 font-bold">All listed times are in Eastern Time (EDT).</p>
     <div class="mt-4 mb-8" v-for="day in program" :key="day.day">
