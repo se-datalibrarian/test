@@ -6,7 +6,7 @@ This is a static site built with [Gridsome](https://gridsome.org/) and [Tailwind
 
 ## Development setup
 
-Instructions for setting up a development environment to edit the SEDLS 2021 website on your own machine. *You must have [Node.js](https://nodejs.org/en/) installed to develop and build this content*
+Instructions for setting up a development environment to edit the SEDLS 2021 website on your own machine. *You must have [Node.js](https://nodejs.org/en/) installed to develop and build this content ([Node version 14](https://nodejs.org/download/release/v14.17.3/) is recommended to ensure environment works out of the box)*
 
 ### 1. Install Gridsome CLI tool if not already installed
 

@@ -16,13 +16,6 @@
     {{ presentationInfo.title }}
   </h4>
   <p
-    v-for="presenters in presentationInfo.presenters.split(', ')"
-    :key=presenters
-    class="text-md mt-1 font-light text-gray-700"
-  >
-    {{ presenters }}
-  </p>
-  <p
     v-if="this.noShare.includes(presentationInfo.title)"
     class="text-md mt-1 font-light italic text-gray-700"
   >
@@ -34,20 +27,25 @@
   >
     This presentation was not recorded
   </p> -->
-  <div class="mt-2 block">
+  <div class="my-2 flex flex-row flex-wrap">
     <a
       v-if="presentationInfo.YouTubeLink !== ''"
-      class="link mt-2 block"
+      class="link mr-4 mb-2"
       v-bind:href="presentationInfo.YouTubeLink"
     >View recording on YouTube</a>
-  </div>
-  <div class="mt-2 block">
     <a
       v-if="!['Break'].includes(presentationInfo.type) && presentationInfo.materialsLink !== ''"
-      class="link"
+      class="link mb-2"
       v-bind:href="presentationInfo.materialsLink"
     >Access presentation materials</a>
   </div>
+  <p
+    v-for="presenters in presentationInfo.presenters.split(', ')"
+    :key=presenters
+    class="text-md mt-1 font-light text-gray-700"
+  >
+    {{ presenters }}
+  </p>
   <button
     v-on:click="showAbstract = !showAbstract"
     v-if="presentationInfo.abstract"
