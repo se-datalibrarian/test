@@ -5,10 +5,10 @@
       Sessions will be held online through Zoom and Discord. Information and instructions to join sessions will be sent to registered attendees via email in the week before the symposium, along with links to join workshops for workshop registrants.
     </p>
     <p>
-      Links to presentation materials for short talks, poster presentations, and workshops can be found in the program listing below. You can also access and find a full listing of materials in the <a class="link" href="https://osf.io/pyscb/">SEDLS 2021 OSF repository</a>.
+      Links to presentation materials for short talks, poster presentations, and workshops can be found in the program listing below. You can access a full listing of materials in the <a class="link" href="https://osf.io/pyscb/">SEDLS 2021 OSF repository</a>.
     </p>
     <p>
-      Short Talks will be recorded, captioned, and shared following the symposium. Workshops and poster presentations will not be recorded.
+      Recordings of short talks, with captions, are available in the program listing below. You can access the full list of recordings on the <a href="https://youtube.com/playlist?list=PLTC6jPg1N9B5bLUpVeLkQy14GGDMMRTNj">SEDLS 2021 YouTube playlist</a>. Workshops and poster presentations were not recorded.
     </p>
     <p class="mt-4">
       Attendees are expected to follow the symposium <g-link class="link" to="/code-of-conduct" active-class="null">Code of Conduct</g-link> and to be aware of the planning committee's <g-link class="link" to="/accessibility" active-class="null">Commitment to Accessibility</g-link>.
