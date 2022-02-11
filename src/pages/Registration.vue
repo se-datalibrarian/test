@@ -6,7 +6,7 @@
     </p>
     <h2 class="mt-4 text-2xl">Registration cost</h2>
     <p class="mt-4">
-      There are seperate costs for attending the general conference, which includes the short talk sessions and poster session, and attending workshops.
+      There are separate costs for attending the general conference, which includes the short talk sessions and poster session, and attending workshops.
     </p>
     <ul class="mt-4 list-inside list-disc">
       <li class="ml-8">General conference (all short talk and poster sessions): <strong>$20.00</strong></li>

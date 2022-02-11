@@ -12,7 +12,7 @@ Instructions for setting up a development environment to edit the SEDLS 2021 web
 
 `npm install --global @gridsome/cli`
 
-### 2. Clone the SEDLS 2021 Gridsome project
+### 2. Clone the SEDLS Website Gridsome project
 
 1. `git clone https://github.com/se-datalibrarian/2021.git` to clone the SEDLS 2021 Gridsome project
 2. `cd 2021` to open the folder
