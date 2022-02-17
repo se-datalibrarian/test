@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.52 130.52">
+  <style>
+    .icon {
+      fill: rgb(30 41 59);
+    }
+    @media (prefers-color-scheme: dark) {
+      .icon {
+        fill: rgb(45 212 191);
+      }
+    }
+  </style>
+  <path class="icon" stroke-linecap="square" stroke-miterlimit="10" d="M130.02 1.21v128.81H1.21L121.17 10.05l8.85-8.84z"/>
+</svg>

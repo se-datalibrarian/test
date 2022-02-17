@@ -1,16 +1,29 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1, h2, h3, h4, h5 {
+        @apply font-mono
+    }
+    p {
+        @apply mt-4
+    }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+html {
+    background-color: rgb(229 231 235);
 }
 
-* {
-  box-sizing: border-box;
+.link-animate {
+    background: linear-gradient(to right, rgb(45, 212, 191), rgb(45, 212, 191) 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition-property: background-position;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-animate:hover {
+    background-position: left 0;
 }
