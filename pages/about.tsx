@@ -1,8 +1,24 @@
-import { NextPage } from "next"
+import { GetStaticProps, NextPage } from "next"
 import Head from "next/head"
+import { parse } from 'csv-parse/sync'
+import { getCsvData } from '../lib/read-csv'
 import { symposiumTitle } from '../components/layout'
 
-const About: NextPage = () => {
+interface CommitteeMember {
+    firstName: string,
+    lastName: string,
+    institution: string
+}
+
+interface AboutProps {
+  planningCommittee: CommitteeMember[]
+}
+
+const About: NextPage<AboutProps> = ({ planningCommittee }) => {
+  const memberListing = planningCommittee.map(d =>
+    <li key={d.lastName}>{d.firstName}</li>
+  )
+
   return (
     <>
       <Head>
@@ -22,8 +38,26 @@ const About: NextPage = () => {
       <p>
         The program is developed based on selected proposals submitted by the community. All proposal abstracts are peer reviewed by the planning committee under a single-blind review protocol blind to author and institution.
       </p>
+      <ul>{memberListing}</ul>
+      <h2 className="text-2xl mt-4">Past Symposium Websites</h2>
+      <ul className="mt-4 ml-4 list-disc list-inside">
+        <li className="mb-2"><a className="link" href="https://se-datalibrarian.github.io/2018/">SEDLS 2018: The Georgia Tech Library in Atlanta, GA</a></li>
+        <li className="mb-2"><a className="link" href="https://se-datalibrarian.github.io/2019/">SEDLS 2019: Tulane University in New Orleans, LA</a></li>
+        <li className="mb-2"><a className="link" href="https://se-datalibrarian.github.io/2020/">SEDLS 2020: Online</a></li>
+        <li className="mb-2"><a className="link" href="https://se-datalibrarian.github.io/2021/">SEDLS 2021: Online</a></li>
+      </ul>
     </>
   )
+}
+
+export const getStaticProps: GetStaticProps = async (context) => {
+  const planningCommitteeRaw = getCsvData('planningCommittee.csv')
+  const planningCommittee: CommitteeMember[] = parse(planningCommitteeRaw, {columns: true})
+  return {
+    props: {
+      planningCommittee
+    }
+  }
 }
 
 export default About

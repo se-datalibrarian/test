@@ -15,6 +15,24 @@ html {
     background-color: rgb(229 231 235);
 }
 
+.link {
+    color: #BE123C;
+    background: linear-gradient(to top, #E11D48, #E11D48 50%, transparent 50%);
+    background-size: 100% 200%;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    transition-property: color, background-position;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link:hover {
+    color: #E5E7EB;
+    background-position: 0 bottom;
+    text-decoration-color: #E11D48;
+  }
+
 .link-animate {
     background: linear-gradient(to right, rgb(45, 212, 191), rgb(45, 212, 191) 50%, transparent 50%);
     background-size: 200% 100%;
